@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="site.luoyu.entity.StudentEntity" table="student" schema="hibernatelearn">
+        <id name="sno">
+            <column name="Sno" sql-type="char(15)" length="15"/>
+        </id>
+        <property name="sname">
+            <column name="Sname" sql-type="char(20)" length="20" not-null="true"/>
+        </property>
+        <property name="ssex">
+            <column name="Ssex" sql-type="char(6)" length="6" not-null="true"/>
+        </property>
+        <property name="sage">
+            <column name="Sage" sql-type="int(10)" not-null="true"/>
+        </property>
+        <property name="sdept">
+            <column name="Sdept" sql-type="char(10)" length="10" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

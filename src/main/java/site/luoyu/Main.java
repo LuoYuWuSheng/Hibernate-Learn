@@ -48,8 +48,10 @@ public class Main {
                     System.out.println("  " + o);
                 }
             }
+            MyQuery myquery = new MyQuery(ourSessionFactory);
         } finally {
             session.close();
         }
     }
+
 }
