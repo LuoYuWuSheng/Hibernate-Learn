@@ -1,13 +1,14 @@
 package site.luoyu.entity;
 
 /**
- * Created by luoyu on 2016/10/18 0018.
+ * Computer user xd
+ * Created by 张洋 on 2017/1/6.
  */
 public class StudentEntity {
     private String sno;
     private String sname;
     private String ssex;
-    private Integer sage;
+    private Short sage;
     private String sdept;
 
     public String getSno() {
@@ -34,11 +35,11 @@ public class StudentEntity {
         this.ssex = ssex;
     }
 
-    public Integer getSage() {
+    public Short getSage() {
         return sage;
     }
 
-    public void setSage(Integer sage) {
+    public void setSage(Short sage) {
         this.sage = sage;
     }
 

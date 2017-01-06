@@ -3,7 +3,8 @@ package site.luoyu.entity;
 import java.io.Serializable;
 
 /**
- * Created by luoyu on 2016/10/18 0018.
+ * Computer user xd
+ * Created by 张洋 on 2017/1/6.
  */
 public class ScEntityPK implements Serializable {
     private String sno;

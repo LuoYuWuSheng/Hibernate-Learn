@@ -1,7 +1,8 @@
 package site.luoyu.entity;
 
 /**
- * Created by luoyu on 2016/10/18 0018.
+ * Computer user xd
+ * Created by 张洋 on 2017/1/6.
  */
 public class ScEntity {
     private String sno;

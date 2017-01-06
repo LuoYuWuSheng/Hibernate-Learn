@@ -1,12 +1,14 @@
 package site.luoyu.entity;
 
 /**
- * Created by luoyu on 2016/10/18 0018.
+ * Computer user xd
+ * Created by 张洋 on 2017/1/6.
  */
 public class CourseEntity {
     private String cno;
     private String cname;
-    private Integer ccredit;
+    private String cpno;
+    private Short ccredit;
 
     public String getCno() {
         return cno;
@@ -24,11 +26,19 @@ public class CourseEntity {
         this.cname = cname;
     }
 
-    public Integer getCcredit() {
+    public String getCpno() {
+        return cpno;
+    }
+
+    public void setCpno(String cpno) {
+        this.cpno = cpno;
+    }
+
+    public Short getCcredit() {
         return ccredit;
     }
 
-    public void setCcredit(Integer ccredit) {
+    public void setCcredit(Short ccredit) {
         this.ccredit = ccredit;
     }
 
@@ -41,6 +51,7 @@ public class CourseEntity {
 
         if (cno != null ? !cno.equals(that.cno) : that.cno != null) return false;
         if (cname != null ? !cname.equals(that.cname) : that.cname != null) return false;
+        if (cpno != null ? !cpno.equals(that.cpno) : that.cpno != null) return false;
         if (ccredit != null ? !ccredit.equals(that.ccredit) : that.ccredit != null) return false;
 
         return true;
@@ -50,6 +61,7 @@ public class CourseEntity {
     public int hashCode() {
         int result = cno != null ? cno.hashCode() : 0;
         result = 31 * result + (cname != null ? cname.hashCode() : 0);
+        result = 31 * result + (cpno != null ? cpno.hashCode() : 0);
         result = 31 * result + (ccredit != null ? ccredit.hashCode() : 0);
         return result;
     }

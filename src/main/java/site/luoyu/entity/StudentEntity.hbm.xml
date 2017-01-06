@@ -5,20 +5,10 @@
 <hibernate-mapping>
 
     <class name="site.luoyu.entity.StudentEntity" table="student" schema="hibernatelearn">
-        <id name="sno">
-            <column name="Sno" sql-type="char(15)" length="15"/>
-        </id>
-        <property name="sname">
-            <column name="Sname" sql-type="char(20)" length="20" not-null="true"/>
-        </property>
-        <property name="ssex">
-            <column name="Ssex" sql-type="char(6)" length="6" not-null="true"/>
-        </property>
-        <property name="sage">
-            <column name="Sage" sql-type="int(10)" not-null="true"/>
-        </property>
-        <property name="sdept">
-            <column name="Sdept" sql-type="char(10)" length="10" not-null="true"/>
-        </property>
+        <id name="sno" column="Sno"/>
+        <property name="sname" column="Sname"/>
+        <property name="ssex" column="Ssex"/>
+        <property name="sage" column="Sage"/>
+        <property name="sdept" column="Sdept"/>
     </class>
 </hibernate-mapping>

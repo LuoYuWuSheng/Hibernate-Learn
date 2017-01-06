@@ -6,9 +6,9 @@
     <session-factory>
         <property name="connection.url">jdbc:mysql://localhost:3306/HibernateLearn</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!--<property name="connection.provider_class">org.hibernate</property>-->
         <property name="connection.username">root</property>
         <property name="connection.password">root</property>
-        <property name="connection.provider_class"></property>
         <mapping resource="site/luoyu/entity/CourseEntity.hbm.xml"/>
         <mapping resource="site/luoyu/entity/ScEntity.hbm.xml"/>
         <mapping resource="site/luoyu/entity/StudentEntity.hbm.xml"/>

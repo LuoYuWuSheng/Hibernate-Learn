@@ -6,15 +6,9 @@
 
     <class name="site.luoyu.entity.ScEntity" table="sc" schema="hibernatelearn">
         <composite-id mapped="true" class="site.luoyu.entity.ScEntityPK">
-            <key-property name="sno">
-                <column name="Sno" sql-type="char(15)" length="15"/>
-            </key-property>
-            <key-property name="cno">
-                <column name="Cno" sql-type="char(4)" length="4"/>
-            </key-property>
+            <key-property name="sno" column="Sno"/>
+            <key-property name="cno" column="Cno"/>
         </composite-id>
-        <property name="grade">
-            <column name="Grade" sql-type="smallint(5)" not-null="true"/>
-        </property>
+        <property name="grade" column="Grade"/>
     </class>
 </hibernate-mapping>

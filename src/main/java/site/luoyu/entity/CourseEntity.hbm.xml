@@ -5,14 +5,9 @@
 <hibernate-mapping>
 
     <class name="site.luoyu.entity.CourseEntity" table="course" schema="hibernatelearn">
-        <id name="cno">
-            <column name="Cno" sql-type="char(4)" length="4"/>
-        </id>
-        <property name="cname">
-            <column name="Cname" sql-type="char(30)" length="30"/>
-        </property>
-        <property name="ccredit">
-            <column name="Ccredit" sql-type="int(10)" not-null="true"/>
-        </property>
+        <id name="cno" column="Cno"/>
+        <property name="cname" column="Cname"/>
+        <property name="cpno" column="Cpno"/>
+        <property name="ccredit" column="Ccredit"/>
     </class>
 </hibernate-mapping>

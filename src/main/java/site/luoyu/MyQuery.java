@@ -17,6 +17,6 @@ public class MyQuery {
 
     private void getEntityById(){
         CourseEntity courseEntity = (CourseEntity) querySession.load(CourseEntity.class,"1");
-        System.out.println(courseEntity.getCname());
+        System.out.println("课程名称 "+courseEntity.getCname()+" 先修课 "+courseEntity.getCpno());
     }
 }
