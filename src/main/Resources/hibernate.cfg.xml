@@ -12,6 +12,7 @@
         <mapping resource="site/luoyu/entity/CourseEntity.hbm.xml"/>
         <mapping resource="site/luoyu/entity/ScEntity.hbm.xml"/>
         <mapping resource="site/luoyu/entity/StudentEntity.hbm.xml"/>
+        <property name="hibernate.connection.provider_class">org.hibernate.c3p0.internal.C3P0ConnectionProvider</property>
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
     </session-factory>
