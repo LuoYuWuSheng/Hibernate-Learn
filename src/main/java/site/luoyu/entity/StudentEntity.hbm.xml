@@ -10,5 +10,9 @@
         <property name="ssex" column="Ssex"/>
         <property name="sage" column="Sage"/>
         <property name="sdept" column="Sdept"/>
+        <set name="sc" table="sc" lazy="true">
+            <key column="Sno" />
+            <one-to-many class="site.luoyu.entity.ScEntity"  />
+        </set>
     </class>
 </hibernate-mapping>

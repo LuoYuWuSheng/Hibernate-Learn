@@ -1,5 +1,7 @@
 package site.luoyu.entity;
 
+import java.util.Set;
+
 /**
  * Computer user xd
  * Created by 张洋 on 2017/1/6.
@@ -10,6 +12,16 @@ public class StudentEntity {
     private String ssex;
     private Short sage;
     private String sdept;
+
+    public Set getSc() {
+        return sc;
+    }
+
+    public void setSc(Set sc) {
+        this.sc = sc;
+    }
+
+    private Set sc;
 
     public String getSno() {
         return sno;
