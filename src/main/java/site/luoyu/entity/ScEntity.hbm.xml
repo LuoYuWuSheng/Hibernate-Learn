@@ -10,5 +10,7 @@
             <key-property name="cno" column="Cno"/>
         </composite-id>
         <property name="grade" column="Grade"/>
+        <!--<one-to-one name="course" foreign-key="Con" class="site.luoyu.entity.CourseEntity"/>-->
+        <many-to-one name="course" column="Cno" />
     </class>
 </hibernate-mapping>

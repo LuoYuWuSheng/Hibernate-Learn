@@ -13,6 +13,8 @@
         <property name="c3p0.timeout">1000</property>
         <property name="connection.username">root</property>
         <property name="connection.password">root</property>
+        <!-- 显示转换的SQL语句 -->
+        <property name="hibernate.show_sql">true</property>
         <mapping resource="site/luoyu/entity/CourseEntity.hbm.xml"/>
         <mapping resource="site/luoyu/entity/ScEntity.hbm.xml"/>
         <mapping resource="site/luoyu/entity/StudentEntity.hbm.xml"/>

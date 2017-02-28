@@ -10,9 +10,16 @@
         <property name="ssex" column="Ssex"/>
         <property name="sage" column="Sage"/>
         <property name="sdept" column="Sdept"/>
-        <set name="sc" table="sc" lazy="true">
+        <set name="sc" table="sc" lazy="true" cascade="save-update">
             <key column="Sno" />
             <one-to-many class="site.luoyu.entity.ScEntity"  />
         </set>
     </class>
+    <!-- Hibernate支持三种HQL查询 1、位置产生 2、命名参数 3、命名查询 这是第三种的示例 -->
+    <query name="Student.Query">
+        <![CDATA[from StudentEntity where sname=:name]]>
+    </query>
+    <query name="Student.Query.ByAge">
+        <![CDATA[from StudentEntity  where sage=:age]]>
+    </query>
 </hibernate-mapping>

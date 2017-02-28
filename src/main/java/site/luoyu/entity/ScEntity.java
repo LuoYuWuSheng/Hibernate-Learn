@@ -8,6 +8,15 @@ public class ScEntity {
     private String sno;
     private String cno;
     private Short grade;
+    private CourseEntity course;
+
+    public CourseEntity getCourse() {
+        return course;
+    }
+
+    public void setCourse(CourseEntity course) {
+        this.course = course;
+    }
 
     public String getSno() {
         return sno;

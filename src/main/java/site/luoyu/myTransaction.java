@@ -7,6 +7,7 @@ import site.luoyu.entity.StudentEntity;
 /**
  * Computer user xd
  * Created by 张洋 on 2017/1/18.
+ * Hibernate 事务示例
  */
 public class myTransaction {
     public static void main(String[] args) {

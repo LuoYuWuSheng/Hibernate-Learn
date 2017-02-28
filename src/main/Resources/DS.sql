@@ -1,5 +1,5 @@
 # mysql -u root -p --default-character-set=utf8
-# 登陆并sourc，请使用上面的参数，否者source的数据库会乱码
+# 登陆并source，请使用上面的参数，否者source的数据库会乱码
 SET NAMES 'utf8';
 
 CREATE DATABASE IF NOT EXISTS HibernateLearn CHARACTER SET utf8;
