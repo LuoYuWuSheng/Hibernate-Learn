@@ -40,7 +40,7 @@ public class MyQuery {
         System.out.println("通过Hibernate命名查询查询学生");
         Query query = querySession.getNamedQuery("Student.Query");
 //todo        继续折腾中文查询不到的问题
-        query.setParameter("name","李勇");
+        query.setParameter("name","zhang");
         Query ageQuery = querySession.getNamedQuery("Student.Query.ByAge");
 //        Hibernate的自动类型识别挺坑的啊，这里把20识别为Int，但是数据库中是short。查询会有问题
         ageQuery.setParameter("age",(short)20);
